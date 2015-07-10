@@ -14,6 +14,7 @@
 		EF54060D1B502CD70069C5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */; };
 		EF5406181B502CD70069C5D4 /* Physics_SandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406171B502CD70069C5D4 /* Physics_SandboxTests.swift */; };
 		EF5406231B502CD70069C5D4 /* Physics_SandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */; };
+		EF5406311B50375A0069C5D4 /* PlayModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EF54061E1B502CD70069C5D4 /* Physics SandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Physics SandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics_SandboxUITests.swift; sourceTree = "<group>"; };
 		EF5406241B502CD70069C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				EF5406021B502CD70069C5D4 /* AppDelegate.swift */,
 				EF5406041B502CD70069C5D4 /* ViewController.swift */,
 				EF5406061B502CD70069C5D4 /* Main.storyboard */,
+				EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */,
 				EF5406091B502CD70069C5D4 /* Assets.xcassets */,
 				EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */,
 				EF54060E1B502CD70069C5D4 /* Info.plist */,
@@ -257,6 +260,7 @@
 			files = (
 				EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */,
 				EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */,
+				EF5406311B50375A0069C5D4 /* PlayModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

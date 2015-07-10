@@ -10,16 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var optionsView: UIView!
+    
+    
+    @IBOutlet weak var buildView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let ball = UIView(frame: CGRectMake(view.center.x, view.center.y, 20, 20))
+        ball.backgroundColor = UIColor.purpleColor()
+        ball.layer.cornerRadius = 10
+        ball.clipsToBounds = true
+        view.addSubview(ball)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! PlayModeViewController
     }
-
 
 }
 
