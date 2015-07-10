@@ -30,6 +30,10 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! PlayModeViewController
     }
+    
+    func () {
+        print("test")
+    }
 
 }
 
