@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F9C898B1B5045D4008C880C /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C898A1B5045D4008C880C /* Brick.swift */; };
+		CF6800AE1B504BEA007D3424 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6800AD1B504BEA007D3424 /* Square.swift */; };
 		EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406021B502CD70069C5D4 /* AppDelegate.swift */; };
 		EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406041B502CD70069C5D4 /* ViewController.swift */; };
 		EF5406081B502CD70069C5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5406061B502CD70069C5D4 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1F9C898A1B5045D4008C880C /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
+		CF6800AD1B504BEA007D3424 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 		EF5405FF1B502CD60069C5D4 /* Physics Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physics Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5406021B502CD70069C5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5406041B502CD70069C5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				EF5406021B502CD70069C5D4 /* AppDelegate.swift */,
 				EF5406041B502CD70069C5D4 /* ViewController.swift */,
+				CF6800AD1B504BEA007D3424 /* Square.swift */,
 				1F9C898A1B5045D4008C880C /* Brick.swift */,
 				EF5406061B502CD70069C5D4 /* Main.storyboard */,
 				EF5406321B5045080069C5D4 /* Ball.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6800AE1B504BEA007D3424 /* Square.swift in Sources */,
 				EF5406331B5045080069C5D4 /* Ball.swift in Sources */,
 				EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */,
 				1F9C898B1B5045D4008C880C /* Brick.swift in Sources */,
