@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         ball.clipsToBounds = true
         view.addSubview(ball)
         print("I am just checking github out")
+        print("test")
     }
     
     
@@ -31,9 +32,7 @@ class ViewController: UIViewController {
         let dvc = segue.destinationViewController as! PlayModeViewController
     }
     
-    func () {
-        print("test")
-    }
+    
 
 }
 
