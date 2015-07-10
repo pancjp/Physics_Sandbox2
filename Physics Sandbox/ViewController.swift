@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         ball.layer.cornerRadius = 10
         ball.clipsToBounds = true
         view.addSubview(ball)
+        print("I am just checking github out")
     }
     
     
