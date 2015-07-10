@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406021B502CD70069C5D4 /* AppDelegate.swift */; };
+		EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406041B502CD70069C5D4 /* ViewController.swift */; };
+		EF5406081B502CD70069C5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5406061B502CD70069C5D4 /* Main.storyboard */; };
+		EF54060A1B502CD70069C5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5406091B502CD70069C5D4 /* Assets.xcassets */; };
+		EF54060D1B502CD70069C5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */; };
+		EF5406181B502CD70069C5D4 /* Physics_SandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406171B502CD70069C5D4 /* Physics_SandboxTests.swift */; };
+		EF5406231B502CD70069C5D4 /* Physics_SandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF5406141B502CD70069C5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5405F71B502CD60069C5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5405FE1B502CD60069C5D4;
+			remoteInfo = "Physics Sandbox";
+		};
+		EF54061F1B502CD70069C5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5405F71B502CD60069C5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5405FE1B502CD60069C5D4;
+			remoteInfo = "Physics Sandbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF5405FF1B502CD60069C5D4 /* Physics Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physics Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5406021B502CD70069C5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF5406041B502CD70069C5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF5406071B502CD70069C5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF5406091B502CD70069C5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF54060C1B502CD70069C5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF54060E1B502CD70069C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5406131B502CD70069C5D4 /* Physics SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Physics SandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5406171B502CD70069C5D4 /* Physics_SandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics_SandboxTests.swift; sourceTree = "<group>"; };
+		EF5406191B502CD70069C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF54061E1B502CD70069C5D4 /* Physics SandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Physics SandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics_SandboxUITests.swift; sourceTree = "<group>"; };
+		EF5406241B502CD70069C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF5405FC1B502CD60069C5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5406101B502CD70069C5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF54061B1B502CD70069C5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF5405F61B502CD60069C5D4 = {
+			isa = PBXGroup;
+			children = (
+				EF5406011B502CD70069C5D4 /* Physics Sandbox */,
+				EF5406161B502CD70069C5D4 /* Physics SandboxTests */,
+				EF5406211B502CD70069C5D4 /* Physics SandboxUITests */,
+				EF5406001B502CD60069C5D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5406001B502CD60069C5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5405FF1B502CD60069C5D4 /* Physics Sandbox.app */,
+				EF5406131B502CD70069C5D4 /* Physics SandboxTests.xctest */,
+				EF54061E1B502CD70069C5D4 /* Physics SandboxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5406011B502CD70069C5D4 /* Physics Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				EF5406021B502CD70069C5D4 /* AppDelegate.swift */,
+				EF5406041B502CD70069C5D4 /* ViewController.swift */,
+				EF5406061B502CD70069C5D4 /* Main.storyboard */,
+				EF5406091B502CD70069C5D4 /* Assets.xcassets */,
+				EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */,
+				EF54060E1B502CD70069C5D4 /* Info.plist */,
+			);
+			path = "Physics Sandbox";
+			sourceTree = "<group>";
+		};
+		EF5406161B502CD70069C5D4 /* Physics SandboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF5406171B502CD70069C5D4 /* Physics_SandboxTests.swift */,
+				EF5406191B502CD70069C5D4 /* Info.plist */,
+			);
+			path = "Physics SandboxTests";
+			sourceTree = "<group>";
+		};
+		EF5406211B502CD70069C5D4 /* Physics SandboxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */,
+				EF5406241B502CD70069C5D4 /* Info.plist */,
+			);
+			path = "Physics SandboxUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5405FE1B502CD60069C5D4 /* Physics Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5406271B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics Sandbox" */;
+			buildPhases = (
+				EF5405FB1B502CD60069C5D4 /* Sources */,
+				EF5405FC1B502CD60069C5D4 /* Frameworks */,
+				EF5405FD1B502CD60069C5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Physics Sandbox";
+			productName = "Physics Sandbox";
+			productReference = EF5405FF1B502CD60069C5D4 /* Physics Sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF5406121B502CD70069C5D4 /* Physics SandboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF54062A1B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics SandboxTests" */;
+			buildPhases = (
+				EF54060F1B502CD70069C5D4 /* Sources */,
+				EF5406101B502CD70069C5D4 /* Frameworks */,
+				EF5406111B502CD70069C5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF5406151B502CD70069C5D4 /* PBXTargetDependency */,
+			);
+			name = "Physics SandboxTests";
+			productName = "Physics SandboxTests";
+			productReference = EF5406131B502CD70069C5D4 /* Physics SandboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF54061D1B502CD70069C5D4 /* Physics SandboxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF54062D1B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics SandboxUITests" */;
+			buildPhases = (
+				EF54061A1B502CD70069C5D4 /* Sources */,
+				EF54061B1B502CD70069C5D4 /* Frameworks */,
+				EF54061C1B502CD70069C5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF5406201B502CD70069C5D4 /* PBXTargetDependency */,
+			);
+			name = "Physics SandboxUITests";
+			productName = "Physics SandboxUITests";
+			productReference = EF54061E1B502CD70069C5D4 /* Physics SandboxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF5405F71B502CD60069C5D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Cagan Hawthorne";
+				TargetAttributes = {
+					EF5405FE1B502CD60069C5D4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					EF5406121B502CD70069C5D4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EF5405FE1B502CD60069C5D4;
+					};
+					EF54061D1B502CD70069C5D4 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EF5405FE1B502CD60069C5D4;
+					};
+				};
+			};
+			buildConfigurationList = EF5405FA1B502CD60069C5D4 /* Build configuration list for PBXProject "Physics Sandbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF5405F61B502CD60069C5D4;
+			productRefGroup = EF5406001B502CD60069C5D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5405FE1B502CD60069C5D4 /* Physics Sandbox */,
+				EF5406121B502CD70069C5D4 /* Physics SandboxTests */,
+				EF54061D1B502CD70069C5D4 /* Physics SandboxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF5405FD1B502CD60069C5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF54060D1B502CD70069C5D4 /* LaunchScreen.storyboard in Resources */,
+				EF54060A1B502CD70069C5D4 /* Assets.xcassets in Resources */,
+				EF5406081B502CD70069C5D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5406111B502CD70069C5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF54061C1B502CD70069C5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF5405FB1B502CD60069C5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */,
+				EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF54060F1B502CD70069C5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5406181B502CD70069C5D4 /* Physics_SandboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF54061A1B502CD70069C5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5406231B502CD70069C5D4 /* Physics_SandboxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF5406151B502CD70069C5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5405FE1B502CD60069C5D4 /* Physics Sandbox */;
+			targetProxy = EF5406141B502CD70069C5D4 /* PBXContainerItemProxy */;
+		};
+		EF5406201B502CD70069C5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5405FE1B502CD60069C5D4 /* Physics Sandbox */;
+			targetProxy = EF54061F1B502CD70069C5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF5406061B502CD70069C5D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5406071B502CD70069C5D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF54060C1B502CD70069C5D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF5406251B502CD70069C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5406261B502CD70069C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF5406281B502CD80069C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Physics Sandbox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF5406291B502CD80069C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Physics Sandbox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF54062B1B502CD80069C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Physics SandboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Physics Sandbox.app/Physics Sandbox";
+			};
+			name = Debug;
+		};
+		EF54062C1B502CD80069C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Physics SandboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-SandboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Physics Sandbox.app/Physics Sandbox";
+			};
+			name = Release;
+		};
+		EF54062E1B502CD80069C5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Physics SandboxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-SandboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Physics Sandbox";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EF54062F1B502CD80069C5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Physics SandboxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hawthorne.Physics-SandboxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Physics Sandbox";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF5405FA1B502CD60069C5D4 /* Build configuration list for PBXProject "Physics Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5406251B502CD70069C5D4 /* Debug */,
+				EF5406261B502CD70069C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5406271B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5406281B502CD80069C5D4 /* Debug */,
+				EF5406291B502CD80069C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF54062A1B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics SandboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF54062B1B502CD80069C5D4 /* Debug */,
+				EF54062C1B502CD80069C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF54062D1B502CD80069C5D4 /* Build configuration list for PBXNativeTarget "Physics SandboxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF54062E1B502CD80069C5D4 /* Debug */,
+				EF54062F1B502CD80069C5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF5405F71B502CD60069C5D4 /* Project object */;
+}
