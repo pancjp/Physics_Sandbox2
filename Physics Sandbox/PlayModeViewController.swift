@@ -8,28 +8,48 @@
 
 import UIKit
 
-class PlayModeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
+    
+    var dynamicAnimator = UIDynamicAnimator()
+    var allObjects : [Item] = []
+    var dynObjects : [UIDynamicItem] = []
+    var collisionBehavior = UICollisionBehavior()
     
 
-    /*
-    // MARK: - Navigation
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dynamicAnimator = UIDynamicAnimator(referenceView: view)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        for index in allObjects {
+            dynObjects.append(index)
+            view.addSubview(index)
+
+        }
+        collisionBehavior = UICollisionBehavior(items: allObjects)
+        collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        collisionBehavior.collisionMode = .Everything
+        collisionBehavior.collisionDelegate = self
+        dynamicAnimator.addBehavior(collisionBehavior)
+        for index in allObjects {
+            collisionBehavior.addItem(index)
+        }
+        
+        let pushBehavior = UIPushBehavior(items: allObjects, mode: UIPushBehaviorMode.Continuous)
+        pushBehavior.pushDirection = CGVectorMake(0, 4.71238898038)
+        pushBehavior.magnitude = 5
+        dynamicAnimator.addBehavior(pushBehavior)
+        
+        
+        print("\(allObjects.count)")
+       
     }
-    */
+    @IBAction func onStuffBeingDragged(sender: UIPanGestureRecognizer) {
+        self.view.bringSubviewToFront(sender.view!)
+        let translation = sender.translationInView(self.view!)
+        sender.view!.center = CGPointMake(sender.view!.center.x + translation.x, sender.view!.center.y + translation.y)
+        sender.setTranslation(CGPointZero, inView: self.view!)
+    }
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F980E501B5403E5003F92D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F980E4F1B5403E5003F92D6 /* Item.swift */; };
 		1F9C898B1B5045D4008C880C /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C898A1B5045D4008C880C /* Brick.swift */; };
 		CF6800AE1B504BEA007D3424 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6800AD1B504BEA007D3424 /* Square.swift */; };
 		EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406021B502CD70069C5D4 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		EF5406231B502CD70069C5D4 /* Physics_SandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */; };
 		EF5406311B50375A0069C5D4 /* PlayModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */; };
 		EF5406331B5045080069C5D4 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406321B5045080069C5D4 /* Ball.swift */; };
+		EF5406351B5420980069C5D4 /* ItemsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5406341B5420980069C5D4 /* ItemsArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F980E4F1B5403E5003F92D6 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1F9C898A1B5045D4008C880C /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		CF6800AD1B504BEA007D3424 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 		EF5405FF1B502CD60069C5D4 /* Physics Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physics Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +56,9 @@
 		EF54061E1B502CD70069C5D4 /* Physics SandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Physics SandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5406221B502CD70069C5D4 /* Physics_SandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics_SandboxUITests.swift; sourceTree = "<group>"; };
 		EF5406241B502CD70069C5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
+		EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		EF5406321B5045080069C5D4 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		EF5406341B5420980069C5D4 /* ItemsArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +111,13 @@
 			children = (
 				EF5406021B502CD70069C5D4 /* AppDelegate.swift */,
 				EF5406041B502CD70069C5D4 /* ViewController.swift */,
+				EF5406341B5420980069C5D4 /* ItemsArray.swift */,
 				CF6800AD1B504BEA007D3424 /* Square.swift */,
 				1F9C898A1B5045D4008C880C /* Brick.swift */,
 				EF5406061B502CD70069C5D4 /* Main.storyboard */,
 				EF5406321B5045080069C5D4 /* Ball.swift */,
 				EF5406301B50375A0069C5D4 /* PlayModeViewController.swift */,
+				1F980E4F1B5403E5003F92D6 /* Item.swift */,
 				EF5406091B502CD70069C5D4 /* Assets.xcassets */,
 				EF54060B1B502CD70069C5D4 /* LaunchScreen.storyboard */,
 				EF54060E1B502CD70069C5D4 /* Info.plist */,
@@ -271,6 +277,8 @@
 				EF5406331B5045080069C5D4 /* Ball.swift in Sources */,
 				EF5406051B502CD70069C5D4 /* ViewController.swift in Sources */,
 				1F9C898B1B5045D4008C880C /* Brick.swift in Sources */,
+				EF5406351B5420980069C5D4 /* ItemsArray.swift in Sources */,
+				1F980E501B5403E5003F92D6 /* Item.swift in Sources */,
 				EF5406031B502CD70069C5D4 /* AppDelegate.swift in Sources */,
 				EF5406311B50375A0069C5D4 /* PlayModeViewController.swift in Sources */,
 			);

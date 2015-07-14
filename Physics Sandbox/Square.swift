@@ -8,24 +8,34 @@
 
 import UIKit
 
-class Square: UIView {
+class Square: Item {
 
-    var squareBehaviors = UIDynamicItemBehavior()
+    
     var square = UIView()
     
+    var elasticity = 1.0
+    var density = 100
+    var resistance = 10
+    var friction = 1
+    
+    
     init(x: CGFloat, y: CGFloat) {
-        super.init(frame: CGRectMake(x, y, 75, 75))
+        super.init(x: x, y: y, h: 75, w: 75)
         self.backgroundColor = UIColor.blueColor()
-        squareBehaviors = UIDynamicItemBehavior(items: [self])
-        squareBehaviors.allowsRotation = true
-        squareBehaviors.elasticity = 1.0
-        squareBehaviors.density = 100
-        squareBehaviors.resistance = 10
-        squareBehaviors.friction = 1
+        
+        var dynamicBehavior = UIDynamicItemBehavior(items: [self])
+        dynamicBehavior = UIDynamicItemBehavior(items: [self])
+        dynamicBehavior.allowsRotation = true
+        
+        dynamicBehavior.elasticity = CGFloat(elasticity)
+        dynamicBehavior.density = CGFloat(density)
+        dynamicBehavior.resistance = CGFloat(resistance)
+        dynamicBehavior.friction = CGFloat(friction)
+        
+        print("square test")
     }
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

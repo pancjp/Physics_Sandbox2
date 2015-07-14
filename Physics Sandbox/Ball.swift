@@ -8,31 +8,37 @@
 
 import UIKit
 
-class Ball: UIView {
+class Ball: Item {
     
-    var ballDynamicBehavior = UIDynamicItemBehavior()
+    
+    
+    var elasticity = 1.0
+    var density = 1
+    var resistance = 1
+    var friction = 0.01
+    
     
     
     init(x: CGFloat, y: CGFloat)
     {
-        super.init(frame: CGRectMake(x, y, 20, 20))
+        
+        super.init(x: x,y: y, h: 20, w: 20)
         self.backgroundColor = UIColor.purpleColor()
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
-        ballDynamicBehavior = UIDynamicItemBehavior(items: [self])
-        ballDynamicBehavior.friction = 0.1
-        ballDynamicBehavior.resistance = 1
-        ballDynamicBehavior.elasticity = 1.0
-        ballDynamicBehavior.density = 1
-        ballDynamicBehavior.allowsRotation = false
         
+        dynamicBehavior = UIDynamicItemBehavior(items: [self])
+        
+        
+        dynamicBehavior.friction = CGFloat(friction)
+        dynamicBehavior.resistance = CGFloat(resistance)
+        dynamicBehavior.elasticity = CGFloat(elasticity)
+        dynamicBehavior.density = CGFloat(density)
+        dynamicBehavior.allowsRotation = true
     }
 
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
-        
-        
     }
     
 

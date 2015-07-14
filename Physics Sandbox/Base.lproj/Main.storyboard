@@ -17,27 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-rC-Y4c">
-                                <rect key="frame" x="20" y="562" width="72" height="30"/>
-                                <state key="normal" title="Play Mode"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-1H-xNI">
+                                <rect key="frame" x="0.0" y="64" width="469" height="490"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSU-RL-rC2">
+                                <rect key="frame" x="406" y="562" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1tB-Xa-wyM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aft-9D-9OY">
+                                <rect key="frame" x="477" y="64" width="123" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-gK-jnB">
+                                        <rect key="frame" x="24" y="98" width="75" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-32-vwr">
+                                        <rect key="frame" x="41" y="212" width="40" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-pS-ICE">
+                                        <rect key="frame" x="51" y="41" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="jmL-Uq-Zbf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-rC-Y4c">
+                                <rect key="frame" x="14" y="530" width="50" height="50"/>
+                                <state key="normal" title="Play Mode" image="playButton"/>
                                 <connections>
                                     <segue destination="nzd-F5-SAZ" kind="show" id="bLC-G8-3g6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSU-RL-rC2">
-                                <rect key="frame" x="406" y="562" width="39" height="30"/>
-                                <state key="normal" title="Reset"/>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aft-9D-9OY">
-                                <rect key="frame" x="477" y="64" width="123" height="536"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-1H-xNI">
-                                <rect key="frame" x="0.0" y="64" width="469" height="490"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fSU-RL-rC2" firstAttribute="top" secondItem="jJ2-1H-xNI" secondAttribute="bottom" constant="8" id="48G-7l-oEQ"/>
                             <constraint firstItem="jJ2-1H-xNI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5A3-V1-8Zy"/>
@@ -51,16 +71,28 @@
                             <constraint firstItem="bMV-rC-Y4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yJl-Go-wKB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aft-9D-9OY" secondAttribute="trailing" constant="-20" id="yyx-nX-YfA"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="o7y-pu-fjf" appends="YES" id="U3R-p2-LmJ"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="gps-qP-2o8"/>
                     <connections>
                         <outlet property="buildView" destination="jJ2-1H-xNI" id="uYV-lA-Id1"/>
+                        <outlet property="masterBall" destination="Ac8-pS-ICE" id="gAJ-Sm-kp3"/>
+                        <outlet property="masterBrick" destination="AXk-32-vwr" id="4gE-sE-mOI"/>
+                        <outlet property="masterSquare" destination="Fhc-gK-jnB" id="beB-aU-wk6"/>
                         <outlet property="optionsView" destination="aft-9D-9OY" id="DBj-Ri-ZyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="o7y-pu-fjf">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="screenIsTapped:" destination="BYZ-38-t0r" id="mCk-IZ-KdC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1057" y="307"/>
+            <point key="canvasLocation" x="1133" y="142"/>
         </scene>
         <!--Play Mode View Controller-->
         <scene sceneID="IO8-fW-Lrd">
@@ -83,9 +115,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDZ-IQ-Ov4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Zp0-3M-D9S">
                     <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="onStuffBeingDragged:" destination="nzd-F5-SAZ" id="vOl-PZ-bee"/>
+                    </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1726" y="307"/>
+            <point key="canvasLocation" x="1850" y="142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odV-Xg-t20">
@@ -106,4 +141,7 @@
             <point key="canvasLocation" x="245" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="playButton" width="75" height="75"/>
+    </resources>
 </document>
