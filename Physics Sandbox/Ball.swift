@@ -13,8 +13,8 @@ class Ball: Item {
     
     
     var elasticity = 1.0
-    var density = 1
-    var resistance = 1
+    var density = 0.5
+    var resistance = 0.5
     var friction = 0.01
     
     
@@ -22,9 +22,9 @@ class Ball: Item {
     init(x: CGFloat, y: CGFloat)
     {
         
-        super.init(x: x,y: y, h: 20, w: 20)
+        super.init(x: x,y: y, h: 30, w: 30)
         self.backgroundColor = UIColor.purpleColor()
-        self.layer.cornerRadius = 10
+        self.layer.cornerRadius = 15
         self.clipsToBounds = true
         
         dynamicBehavior = UIDynamicItemBehavior(items: [self])

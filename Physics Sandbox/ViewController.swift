@@ -32,10 +32,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        buildView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+
 
         masterBall.backgroundColor = UIColor.purpleColor()
-        masterBall.layer.cornerRadius = 10
+        masterBall.layer.cornerRadius = 15
         masterBall.clipsToBounds = true
         
         masterBrick.backgroundColor = UIColor.redColor()
@@ -101,7 +102,7 @@ class ViewController: UIViewController {
                 itemsArray.append(ball)
             }
             else if brickSelected {
-                let brick = Brick(x: CGFloat(tapGesture.x-30), y: CGFloat(tapGesture.y-15))
+                let brick = Brick(x: CGFloat(tapGesture.x-30), y: CGFloat(tapGesture.y-50))
                 buildView.addSubview(brick)
                 itemsArray.append(brick)
             }
