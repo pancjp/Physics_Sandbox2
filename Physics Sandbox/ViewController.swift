@@ -101,7 +101,7 @@ class ViewController: UIViewController {
                 itemsArray.append(ball)
             }
             else if brickSelected {
-                let brick = Brick(x: CGFloat(tapGesture.x-30), y: CGFloat(tapGesture.y-15))
+                let brick = Brick(x: CGFloat(tapGesture.x-30), y: CGFloat(tapGesture.y-50))
                 buildView.addSubview(brick)
                 itemsArray.append(brick)
             }

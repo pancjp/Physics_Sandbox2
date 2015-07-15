@@ -26,6 +26,7 @@ class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
         for index in allObjects {
             dynObjects.append(index)
             view.addSubview(index)
+            dynamicAnimator.addBehavior(index.dynamicBehavior)
 
         }
         collisionBehavior = UICollisionBehavior(items: allObjects)
@@ -41,8 +42,10 @@ class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
         dynamicAnimator.addBehavior(gravity)
         
     }
+    
+    var item : Item!
+
     @IBAction func onStuffBeingDragged(sender: UIPanGestureRecognizer) {
-        var item : Item!
 
         if (sender.state == UIGestureRecognizerState.Began) {
             
