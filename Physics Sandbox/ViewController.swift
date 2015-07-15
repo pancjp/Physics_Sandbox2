@@ -32,10 +32,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        buildView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+
 
         masterBall.backgroundColor = UIColor.purpleColor()
-        masterBall.layer.cornerRadius = 10
+        masterBall.layer.cornerRadius = 15
         masterBall.clipsToBounds = true
         
         masterBrick.backgroundColor = UIColor.redColor()

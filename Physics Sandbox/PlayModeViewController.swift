@@ -21,7 +21,9 @@ class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dynamicAnimator = UIDynamicAnimator(referenceView: view)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+            
+            dynamicAnimator = UIDynamicAnimator(referenceView: view)
 
         for index in allObjects {
             dynObjects.append(index)
