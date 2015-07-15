@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        buildView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        //buildView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
 
 
         masterBall.backgroundColor = UIColor.purpleColor()
