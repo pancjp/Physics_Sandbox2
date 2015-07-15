@@ -114,6 +114,7 @@ class ViewController: UIViewController {
     }
     
     
+    
     @IBAction func resetButtonTapped(sender: UIButton) {
         for e in itemsArray {
             e.removeFromSuperview()
