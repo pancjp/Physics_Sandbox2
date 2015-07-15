@@ -18,6 +18,9 @@ class Square: Item {
     var resistance = 10
     var friction = 1
     
+
+
+    
     
     init(x: CGFloat, y: CGFloat) {
         super.init(x: x, y: y, h: 75, w: 75)
@@ -38,4 +41,13 @@ class Square: Item {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    /*
+    UIImage *image = [[UIImage alloc] init];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    [iv setImage:image];
+    [v addSubview:iv];
+    */
 }
