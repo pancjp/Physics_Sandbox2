@@ -46,12 +46,14 @@ class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
     var item : Item!
 
     @IBAction func onStuffBeingDragged(sender: UIPanGestureRecognizer) {
-
         if (sender.state == UIGestureRecognizerState.Began) {
             
             for i in allObjects {
                 if CGRectContainsPoint(i.frame, sender.locationInView(view)) {
                     item = i
+                    gravity.removeItem(item)
+                    
+                    
                 }
             }
         }
@@ -61,8 +63,12 @@ class PlayModeViewController: UIViewController, UICollisionBehaviorDelegate {
             let panGesture = sender.locationInView(view)
             a.center = CGPointMake(panGesture.x, panGesture.y)
             dynamicAnimator.updateItemUsingCurrentState(a)
+            if sender.state == UIGestureRecognizerState.Ended {
+                gravity.addItem(a)
+                item = nil
+            }
+            
         }
-
             }
 
 }

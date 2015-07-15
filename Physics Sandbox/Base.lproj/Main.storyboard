@@ -48,9 +48,9 @@
                                     <constraint firstAttribute="width" constant="123" id="jmL-Uq-Zbf"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-rC-Y4c">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-rC-Y4c">
                                 <rect key="frame" x="14" y="530" width="50" height="50"/>
-                                <state key="normal" title="Play Mode" image="playButton"/>
+                                <state key="normal" title="Play"/>
                                 <connections>
                                     <segue destination="nzd-F5-SAZ" kind="show" id="bLC-G8-3g6"/>
                                 </connections>
@@ -141,7 +141,4 @@
             <point key="canvasLocation" x="245" y="307"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="playButton" width="75" height="75"/>
-    </resources>
 </document>
